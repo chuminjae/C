@@ -1,0 +1,11 @@
+#include<stdio.h>
+#pragma warning(disable: 4996 6031)
+int f( int a, int b){
+	if (a % b == 0) return b;
+	return f(b, a % b);
+}
+int main() {
+	int x, y;
+	scanf("%d" "%d", x, y);
+	printf("%d", f(x, y));
+}
